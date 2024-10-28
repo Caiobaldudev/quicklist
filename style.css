@@ -40,8 +40,70 @@ header {
   padding: 2.5rem;
   text-align: center;
 }
-
 /* header */
+
+/* main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 630px;
+}
+
+.back {
+  align-self: flex-start;
+  font-size: 1.4rem;
+  margin-bottom: 1.6rem;
+  color: #CA3884;
+}
+
+h2 {
+  font-size: 2.4rem;
+  margin-bottom: 4.4rem;
+}
+
+.content {
+  width: 100%; /* Ocupa toda a largura do main */
+}
+
+.content form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+#inItem {
+  flex: 1;
+  color: #9CA3AF;
+  padding: 11px 18px;
+  font-size: 1.6rem;
+  width: 100%;
+  border-radius: 1.2rem;
+  border: 2px solid;
+  outline: none;
+}
+
+#inItem:focus {
+  border: 2px solid #CA3884;
+}
+
+button {
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  background: #CA3884;
+  border-radius: 1.2rem;
+}
+/* main */
 
 /* mobile - responsive */
 @media (max-width: 390px) {
