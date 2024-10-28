@@ -1,3 +1,4 @@
+/* global */
 * {
   margin: 0;
   padding: 0;
@@ -32,3 +33,20 @@ img {
   max-width: 100%;
   height: auto;
 }
+/* global */
+
+/* header */
+header {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+/* header */
+
+/* mobile - responsive */
+@media (max-width: 390px) {
+  header {
+    display: none;
+  }
+}
+/* mobile */
