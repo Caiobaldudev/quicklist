@@ -10,7 +10,23 @@
 :root {
   font-size: 62.5%;
   /* colors */
+  --background-primary: #f4f5fb;
+  --color-brand: #ca3884;
+  --color-brand-hover: #a52c6b;
+  --color-danger: #c93847;
+  --content-primary: #080b12;
+  --content-secondary: #374151;
+  --content-tertiary: #9ca3af;
+  --white: #fff;
+  --border-primary: #d1d5db;
+  --border-hover: #b9c2d0;
   /* fonts  */
+  --font: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--background-primary);
 }
 
 a {
@@ -56,7 +72,8 @@ main {
   align-self: flex-start;
   font-size: 1.4rem;
   margin-bottom: 1.6rem;
-  color: #CA3884;
+  font-weight: bold;
+  color: var(--color-brand);
 }
 
 h2 {
@@ -76,13 +93,14 @@ h2 {
 
 .input-group {
   display: flex;
+  align-items: center;
   gap: 16px;
   width: 100%;
 }
 
 #inItem {
   flex: 1;
-  color: #9CA3AF;
+  color: var(--border-primary);
   padding: 11px 18px;
   font-size: 1.6rem;
   width: 100%;
@@ -92,16 +110,22 @@ h2 {
 }
 
 #inItem:focus {
-  border: 2px solid #CA3884;
+  border: 2px solid var(--border-hover);
 }
 
 button {
   color: #fff;
-  padding: 8px 12px;
+  padding: 12px 24px;
   font-size: 1.4rem;
+  font-weight: 600;
   cursor: pointer;
-  background: #CA3884;
+  background: var(--color-brand);
   border-radius: 1.2rem;
+  transition: .2s ease-in-out;
+}
+
+button:hover {
+  background: var(--color-brand-hover);
 }
 /* main */
 
