@@ -129,6 +129,105 @@ button:hover {
 }
 /* main */
 
+/* list-types */
+
+ul {
+  margin-top: 4rem;
+}
+
+.list-item{
+  display: flex;
+  align-items: center;
+  margin-top: 1.2rem; 
+  background: var(--white);
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+
+.item-checkbox {
+  display: none;
+}
+
+/* checkbox customizado */
+.custom-checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin-right: 1.2rem;
+}
+
+/* estilo checkbox */
+.checkmark {
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border: 1px solid var(--border-primary);
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.2s;
+}
+
+.item-checkbox:checked + .checkmark {
+  background-color: var(--border-primary);
+  border-color: var(--border-primary);
+}
+
+.checkmark::after {
+  content: "🗸";
+  position: absolute;
+  color: #b9c2d0;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 2px;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease;
+}
+
+.item-checkbox:checked + .checkmark::after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.item-name {
+  color: var(--content-secondary);
+  font-size: 1.6rem;
+}
+
+.delete-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.alert-message {
+  display: flex;
+  align-items: center;
+  padding: 12px 12px;
+  line-height: 2rem;
+  margin-top: 3.6rem;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  border-radius: 1.2rem;
+  color: var(--white);
+  background-color: var(--color-danger);
+}
+
+.alert-icon img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.close-alert {
+  cursor: pointer;
+  margin-left: auto;
+}
+/* list-types */
+
 /* mobile - responsive */
 @media (max-width: 390px) {
   header {
